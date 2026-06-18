@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>¿Es el Diseño una carrera para todos?</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"/>
+        <link href="style.css" rel="stylesheet"/>
+    </head>
+    <body>
+
+        <nav>
+            <div>
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="32" height="32" fill="#e33e1b">
+                        <path d="M93.05,89.79v1.48H7V89.79l32.1-35.42h20.3ZM30.81,20.3a11.73,11.73,0,0,1,23.13-2.59h.86A12.57,12.57,0,0,1,67.34,30.14a12.71,12.71,0,0,1-9.22,11.93,8.86,8.86,0,0,1-17.71,0,8.67,8.67,0,0,1,3.19-6.65A11.16,11.16,0,0,1,42.5,32,11.68,11.68,0,0,1,30.81,20.3Z"/>
+                    </svg>
+                    Diseño y Visualización de Información
+                </span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                </svg>
+            </div>
+        </nav>
+
+        <header>
+            <h3>EDUCACIÓN SUPERIOR EN CHILE — SIES 2026</h3>
+            <h1>¿Es el Diseño una carrera para todos?</h1>
+            <h2>Sobre el acceso y la desigualdad en la oferta de programas de Diseño en Chile</h2>
+            <address></address>
+            <time>Publicado el 17 de junio, 2026 — 09:00 a.m. GMT-4</time>
+        </header>
+
+        <main id="contenedor">
+
+            <p>Chile ofrece <em>46 programas de Diseño</em> en universidades reconocidas por el Estado. Pero la pregunta no es cuántos existen, sino quién puede acceder a ellos. Los datos del <a href="https://www.mifuturo.cl/bases-de-datos-de-oferta-academica/" target="_blank">Servicio de Información de Educación Superior (<small>SIES</small>) 2026</a> revelan un sistema que, bajo una apariencia de diversidad, reproduce desigualdades territoriales y económicas que pocas veces se hacen visibles.</p>
+
+            <p>Cuando alguien decide estudiar Diseño en Chile, enfrenta una oferta que parece amplia: 46 programas activos distribuidos en universidades estatales y privadas a lo largo del país. Sin embargo, esa amplitud esconde una concentración que pocas veces se hace visible. Las oportunidades no se distribuyen de manera homogénea, ni geográficamente ni por tipo de institución.</p>
+
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">46</span>
+                    <span class="stat-label">Programas activos</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">71%</span>
+                    <span class="stat-label">Vacantes en la Región Metropolitana</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">$10,3M</span>
+                    <span class="stat-label">Arancel más alto del sistema</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">$4,0M</span>
+                    <span class="stat-label">Arancel más bajo del sistema</span>
+                </div>
+            </div>
+
+            <!-- ── SECCIÓN 1 ── -->
+
+            <h4>¿Dónde está la oferta? La concentración geográfica de las vacantes</h4>
+
+            <p>El dato más contundente es el primero: de las 2.717 vacantes que ofrece el sistema universitario en su conjunto, casi tres cuartas partes se ubican en la Región Metropolitana. Esto significa que estudiar Diseño, para la mayoría de quienes viven en regiones, implica una decisión que va mucho más allá de lo académico: implica desarraigarse.</p>
+
+            <p>Las regiones de Valparaíso y Biobío son las únicas con una presencia relevante fuera de la capital, aunque distante. El resto —Coquimbo, Antofagasta, Arica, Los Ríos, Maule, Ñuble— apenas acumula entre 35 y 60 vacantes cada una. En varias regiones del país, sencillamente no existe oferta universitaria de Diseño.</p>
+
+            <figure>
+                <!-- SVG 1: Treemap / proporción de vacantes por región -->
+                <svg id="svg-regiones" viewBox="0 0 680 340" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;">
+                    <!-- Región Metropolitana: 71% = ~1929 vacantes -->
+                    <rect x="0" y="0" width="483" height="340" fill="#e8571a" opacity="0.85"/>
+                    <text x="241" y="155" text-anchor="middle" font-family="Georama, sans-serif" font-size="38" font-weight="700" fill="white">71%</text>
+                    <text x="241" y="190" text-anchor="middle" font-family="Georama, sans-serif" font-size="13" fill="white" opacity="0.9">Región Metropolitana</text>
+                    <text x="241" y="210" text-anchor="middle" font-family="Georama, sans-serif" font-size="12" fill="white" opacity="0.75">1.939 vacantes</text>
+
+                    <!-- Valparaíso: ~10% = 272 vacantes -->
+                    <rect x="487" y="0" width="193" height="113" fill="#c0461a" opacity="0.85"/>
+                    <text x="583" y="48" text-anchor="middle" font-family="Georama, sans-serif" font-size="16" font-weight="700" fill="white">10%</text>
+                    <text x="583" y="66" text-anchor="middle" font-family="Georama, sans-serif" font-size="10" fill="white" opacity="0.85">Valparaíso</text>
+                    <text x="583" y="82" text-anchor="middle" font-family="Georama, sans-serif" font-size="10" fill="white" opacity="0.7">272 vacantes</text>
+
+                    <!-- Biobío: ~7% = 190 vacantes -->
+                    <rect x="487" y="117" width="193" height="86" fill="#9c3a14" opacity="0.85"/>
+                    <text x="583" y="156" text-anchor="middle" font-family="Georama, sans-serif" font-size="14" font-weight="700" fill="white">7%</text>
+                    <text x="583" y="173" text-anchor="middle" font-family="Georama, sans-serif" font-size="10" fill="white" opacity="0.85">Biobío</text>
+                    <text x="583" y="188" text-anchor="middle" font-family="Georama, sans-serif" font-size="10" fill="white" opacity="0.7">190 vacantes</text>
+
+                    <!-- Antofagasta: ~2% -->
+                    <rect x="487" y="207" width="60" height="133" fill="#7a2f10" opacity="0.85"/>
+                    <text x="517" y="268" text-anchor="middle" font-family="Georama, sans-serif" font-size="10" font-weight="700" fill="white">2%</text>
+                    <text x="517" y="283" text-anchor="middle" font-family="Georama, sans-serif" font-size="9" fill="white" opacity="0.8">Antof.</text>
+
+                    <!-- Tarapacá: ~2% -->
+                    <rect x="551" y="207" width="60" height="133" fill="#612408" opacity="0.85"/>
+                    <text x="581" y="268" text-anchor="middle" font-family="Georama, sans-serif" font-size="10" font-weight="700" fill="white">2%</text>
+                    <text x="581" y="283" text-anchor="middle" font-family="Georama, sans-serif" font-size="9" fill="white" opacity="0.8">Tarapacá</text>
+
+                    <!-- Resto del país: ~8% -->
+                    <rect x="615" y="207" width="65" height="133" fill="#4a1c06" opacity="0.85"/>
+                    <text x="647" y="265" text-anchor="middle" font-family="Georama, sans-serif" font-size="10" font-weight="700" fill="white">8%</text>
+                    <text x="647" y="280" text-anchor="middle" font-family="Georama, sans-serif" font-size="9" fill="white" opacity="0.8">Resto</text>
+                    <text x="647" y="295" text-anchor="middle" font-family="Georama, sans-serif" font-size="9" fill="white" opacity="0.8">del país</text>
+                </svg>
+                <figcaption>
+                    Distribución proporcional de vacantes en programas universitarios de Diseño por región. Cada rectángulo representa el peso relativo de la región en el total de 2.717 cupos disponibles. Datos 2026 del <a href="https://www.mifuturo.cl/bases-de-datos-de-oferta-academica/" target="_blank">Servicio de Información de Educación Superior (SIES)</a>.
+                </figcaption>
+            </figure>
+
+            <!-- ── SECCIÓN 2 ── -->
+
+            <h4>¿Cuánto cuesta? La brecha económica según tipo de universidad</h4>
+
+            <p>La concentración geográfica no es el único filtro. El segundo obstáculo es económico. Los aranceles anuales en programas de Diseño varían entre <em>$4 millones y más de $10 millones</em>, una brecha que no siempre se explica por la calidad o los años de acreditación de la institución.</p>
+
+            <p>Las universidades estatales, que representan solo el 30% de los programas del sistema, cobran en promedio cerca de $950.000 menos al año que las privadas. Pero el promedio esconde algo más interesante: la dispersión. Cada punto del siguiente gráfico es uno de los 46 programas, ordenado según su arancel. Pasa el cursor sobre cualquier punto para ver el detalle.</p>
+
+            <figure>
+                <!-- SVG 2: Beeswarm de aranceles por tipo de institución — generado en Rawgraphs, editado en Illustrator -->
+                <svg id="svg-aranceles" viewBox="0 0 805 600" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;"><style>circle{cursor:pointer;transition:all 0.15s ease;}circle:hover{r:9;stroke:#222;stroke-width:1.5;}</style><rect width="805" height="600" x="0" y="0" fill="#FFFFFF" id="background"/><g transform="translate(50,10)" id="viz"><g id="axis"><g transform="translate(0,540)" fill="none" font-size="10" font-family="Georama, sans-serif" text-anchor="middle"><path class="domain" stroke="currentColor" d="M0,6V0H705V6"/><g class="tick" opacity="1" transform="translate(0,0)"><line stroke="currentColor" y2="6"/><text fill="currentColor" y="9" dy="0.71em">4,000,000</text></g><g class="tick" opacity="1" transform="translate(54.23076923076923,0)"><line stroke="currentColor" y2="6"/><text fill="currentColor" y="9" dy="0.71em">4,500,000</text></g><g class="tick" opacity="1" transform="translate(108.46153846153847,0)"><line stroke="currentColor" y2="6"/><text fill="currentColor" y="9" dy="0.71em">5,000,000</text></g><g class="tick" opacity="1" transform="translate(162.6923076923077,0)"><line stroke="currentColor" y2="6"/><text fill="currentColor" y="9" dy="0.71em">5,500,000</text></g><g class="tick" opacity="1" transform="translate(216.92307692307693,0)"><line stroke="currentColor" y2="6"/><text fill="currentColor" y="9" dy="0.71em">6,000,000</text></g><g class="tick" opacity="1" transform="translate(271.1538461538462,0)"><line stroke="currentColor" y2="6"/><text fill="currentColor" y="9" dy="0.71em">6,500,000</text></g><g class="tick" opacity="1" transform="translate(325.3846153846154,0)"><line stroke="currentColor" y2="6"/><text fill="currentColor" y="9" dy="0.71em">7,000,000</text></g><g class="tick" opacity="1" transform="translate(379.6153846153846,0)"><line stroke="currentColor" y2="6"/><text fill="currentColor" y="9" dy="0.71em">7,500,000</text></g><g class="tick" opacity="1" transform="translate(433.84615384615387,0)"><line stroke="currentColor" y2="6"/><text fill="currentColor" y="9" dy="0.71em">8,000,000</text></g><g class="tick" opacity="1" transform="translate(488.07692307692304,0)"><line stroke="currentColor" y2="6"/><text fill="currentColor" y="9" dy="0.71em">8,500,000</text></g><g class="tick" opacity="1" transform="translate(542.3076923076924,0)"><line stroke="currentColor" y2="6"/><text fill="currentColor" y="9" dy="0.71em">9,000,000</text></g><g class="tick" opacity="1" transform="translate(596.5384615384615,0)"><line stroke="currentColor" y2="6"/><text fill="currentColor" y="9" dy="0.71em">9,500,000</text></g><g class="tick" opacity="1" transform="translate(650.7692307692308,0)"><line stroke="currentColor" y2="6"/><text fill="currentColor" y="9" dy="0.71em">10,000,000</text></g><g class="tick" opacity="1" transform="translate(705,0)"><line stroke="currentColor" y2="6"/><text fill="currentColor" y="9" dy="0.71em">10,500,000</text></g><text x="705" dy="-5" text-anchor="end" style="font-family: Georama, sans-serif; font-size: 12px; fill: rgb(123, 123, 123); font-weight: bold;">arancel</text></g><g fill="none" font-size="10" font-family="Georama, sans-serif" text-anchor="end"><path class="domain" stroke="currentColor" d="M0,0V540"/><g class="tick" opacity="1" transform="translate(0,135)"><line stroke="currentColor" x2="705" style="stroke: rgb(204, 204, 204);"/><text fill="currentColor" x="-3" dy="0.32em">Privada</text></g><g class="tick" opacity="1" transform="translate(0,405)"><line stroke="currentColor" x2="705" style="stroke: rgb(204, 204, 204);"/><text fill="currentColor" x="-3" dy="0.32em">Estatal</text></g><text x="4" text-anchor="start" dominant-baseline="hanging" style="font-family: Georama, sans-serif; font-size: 12px; fill: rgb(123, 123, 123); font-weight: bold;">tipo</text></g></g><g id="visualization"><g id="Privada"><g id="circles"><circle cx="348.07847988046865" cy="129.56605946603727" r="5.25" style="fill: #e8571a; opacity: 0.8;"><title>Universidad Finis Terrae — $7.200.000</title></circle><circle cx="690.288276923077" cy="135" r="5.25" style="fill: #e8571a; opacity: 0.8;"><title>Universidad del Desarrollo — $10.364.360</title></circle><circle cx="60.87682435866839" cy="133.72512572399984" r="5.25" style="fill: #e8571a; opacity: 0.8;"><title>UNIACC — $4.580.000</title></circle><circle cx="626.7545470359951" cy="129.31272682544073" r="5.25" style="fill: #e8571a; opacity: 0.8;"><title>Universidad del Desarrollo (Santiago) — $9.754.692</title></circle><circle cx="390.13615384615383" cy="135" r="5.25" style="fill: #e8571a; opacity: 0.8;"><title>Universidad Diego Portales — $7.597.000</title></circle><circle cx="442.5230769230769" cy="135" r="5.25" style="fill: #e8571a; opacity: 0.8;"><title>Pontificia Universidad Católica de Chile — $8.080.000</title></circle><circle cx="360.5685702656105" cy="129.0841833285126" r="5.25" style="fill: #e8571a; opacity: 0.8;"><title>Universidad Finis Terrae — $7.320.000</title></circle><circle cx="227.20812548395554" cy="132.58458700330203" r="5.25" style="fill: #e8571a; opacity: 0.8;"><title>Universidad del Desarrollo (Concepción) — $6.056.038</title></circle><circle cx="315.6940149637378" cy="134.90437639014897" r="5.25" style="fill: #e8571a; opacity: 0.8;"><title>Pontificia Universidad Católica de Valparaíso — $6.915.000</title></circle><circle cx="139.94373813796847" cy="134.99702562344754" r="5.25" style="fill: #e8571a; opacity: 0.8;"><title>Universidad Católica de Temuco — $5.276.000</title></circle><circle cx="71.4197482933765" cy="140.43930640484948" r="5.25" style="fill: #e8571a; opacity: 0.8;"><title>Universidad de Las Américas — $4.730.000</title></circle><circle cx="199.46334968659684" cy="129.89060694132618" r="5.25" style="fill: #e8571a; opacity: 0.8;"><title>Universidad Austral de Chile — $5.887.000</title></circle><circle cx="32.405678907452725" cy="134.60451007562406" r="5.25" style="fill: #e8571a; opacity: 0.8;"><title>Universidad de Viña del Mar — $4.277.000</title></circle><circle cx="83.91785453493077" cy="140.58884593454528" r="5.25" style="fill: #e8571a; opacity: 0.8;"><title>Universidad Gabriela Mistral — $4.814.000</title></circle><circle cx="21.93866741915421" cy="141.4382714295198" r="5.25" style="fill: #e8571a; opacity: 0.8;"><title>UNIACC — $4.210.000</title></circle><circle cx="3.253425488506415" cy="135.00016939850698" r="5.25" style="fill: #e8571a; opacity: 0.8;"><title>UNIACC — $4.030.000</title></circle><circle cx="114.94384902750241" cy="134.99530470265236" r="5.25" style="fill: #e8571a; opacity: 0.8;"><title>Universidad Andrés Bello — $5.069.000</title></circle><circle cx="335.71835248245765" cy="127.70465656591846" r="5.25" style="fill: #e8571a; opacity: 0.8;"><title>Universidad Andrés Bello — $7.136.000</title></circle><circle cx="365.13621766539467" cy="140.71986197605125" r="5.25" style="fill: #e8571a; opacity: 0.8;"><title>Universidad Finis Terrae — $7.320.000</title></circle><circle cx="340.28565577756683" cy="139.3404546500898" r="5.25" style="fill: #e8571a; opacity: 0.8;"><title>Universidad Andrés Bello — $7.148.000</title></circle><circle cx="96.41692716487552" cy="140.736585505129" r="5.25" style="fill: #e8571a; opacity: 0.8;"><title>Universidad Gabriela Mistral — $4.814.000</title></circle><circle cx="90.29573854007238" cy="129.83760091986755" r="5.25" style="fill: #e8571a; opacity: 0.8;"><title>Universidad Gabriela Mistral — $4.814.000</title></circle><circle cx="102.79363681115484" cy="129.98464840892416" r="5.25" style="fill: #e8571a; opacity: 0.8;"><title>Universidad Gabriela Mistral — $4.814.000</title></circle><circle cx="77.79783905208556" cy="129.68912987063075" r="5.25" style="fill: #e8571a; opacity: 0.8;"><title>Universidad Gabriela Mistral — $4.814.000</title></circle><circle cx="327.9255851904904" cy="137.47868606159167" r="5.25" style="fill: #e8571a; opacity: 0.8;"><title>Universidad Andrés Bello — $7.065.000</title></circle><circle cx="21.253766646425117" cy="128.9570490963493" r="5.25" style="fill: #e8571a; opacity: 0.8;"><title>UNIACC — $4.210.000</title></circle><circle cx="352.6459991588886" cy="141.20172156164955" r="5.25" style="fill: #e8571a; opacity: 0.8;"><title>Universidad Mayor — $7.214.218</title></circle><circle cx="621.5709483486203" cy="140.68727317455927" r="5.25" style="fill: #e8571a; opacity: 0.8;"><title>Universidad Adolfo Ibáñez — $9.754.692</title></circle><circle cx="219.16403416965733" cy="142.15252406384468" r="5.25" style="fill: #e8571a; opacity: 0.8;"><title>Univ. Técnica Federico Santa María — $6.000.000</title></circle><circle cx="214.89973971667476" cy="130.40218441213642" r="5.25" style="fill: #e8571a; opacity: 0.8;"><title>Univ. Técnica Federico Santa María — $6.000.000</title></circle><circle cx="127.4438440793651" cy="135.00642690595427" r="5.25" style="fill: #e8571a; opacity: 0.8;"><title>Univ. Técnica Federico Santa María — $5.180.000</title></circle><circle cx="206.8557955585001" cy="139.97009757939057" r="5.25" style="fill: #e8571a; opacity: 0.8;"><title>Universidad Bernardo O'Higgins — $5.900.000</title></circle></g></g><g id="Estatal"><g id="circles"><circle cx="185.79461538461538" cy="405" r="5.25" style="fill: #1a6ca8; opacity: 0.8;"><title>Universidad de Valparaíso — $5.713.000</title></circle><circle cx="262.0446709204106" cy="404.9311051511802" r="5.25" style="fill: #1a6ca8; opacity: 0.8;"><title>Universidad de Chile — $6.486.700</title></circle><circle cx="204.6669230769231" cy="405" r="5.25" style="fill: #1a6ca8; opacity: 0.8;"><title>Universidad de Talca — $5.887.000</title></circle><circle cx="7.700769230769231" cy="405" r="5.25" style="fill: #1a6ca8; opacity: 0.8;"><title>Universidad de La Serena — $4.071.000</title></circle><circle cx="25.31714390930691" cy="404.99999022607653" r="5.25" style="fill: #1a6ca8; opacity: 0.8;"><title>Universidad de Playa Ancha — $4.305.000</title></circle><circle cx="82.7886923076923" cy="405" r="5.25" style="fill: #1a6ca8; opacity: 0.8;"><title>Universidad Tecnológica Metropolitana — $4.763.300</title></circle><circle cx="274.5413531996912" cy="405.1712032755131" r="5.25" style="fill: #1a6ca8; opacity: 0.8;"><title>Universidad de Santiago de Chile — $6.552.000</title></circle><circle cx="37.81681266073592" cy="405.00001259675685" r="5.25" style="fill: #1a6ca8; opacity: 0.8;"><title>Universidad del Bío-Bío — $4.307.000</title></circle><circle cx="121.47692307692307" cy="405" r="5.25" style="fill: #1a6ca8; opacity: 0.8;"><title>Universidad de Antofagasta — $5.120.000</title></circle><circle cx="50.316812660726406" cy="404.9999971771661" r="5.25" style="fill: #1a6ca8; opacity: 0.8;"><title>Universidad del Bío-Bío — $4.434.000</title></circle><circle cx="108.20384615384616" cy="405" r="5.25" style="fill: #1a6ca8; opacity: 0.8;"><title>Universidad de Santiago de Chile — $4.989.000</title></circle><circle cx="95.70384615384616" cy="405" r="5.25" style="fill: #1a6ca8; opacity: 0.8;"><title>Universidad Tecnológica Metropolitana — $4.891.000</title></circle><circle cx="287.0383604952825" cy="404.8976915733069" r="5.25" style="fill: #1a6ca8; opacity: 0.8;"><title>Universidad de Tarapacá — $6.555.000</title></circle><circle cx="161.868" cy="405" r="5.25" style="fill: #1a6ca8; opacity: 0.8;"><title>Universidad de Chile — $5.492.400</title></circle></g></g></g></g></svg>
+                <figcaption>
+                    Cada punto representa uno de los 46 programas de Diseño activos, posicionado según su arancel anual. Naranja: universidades privadas (32 programas). Azul: universidades estatales (14 programas). Pasa el cursor sobre un punto para ver universidad y valor exacto. Generado en Rawgraphs y editado en Illustrator. Datos 2026 del <a href="https://www.mifuturo.cl/bases-de-datos-de-oferta-academica/" target="_blank">Servicio de Información de Educación Superior (SIES)</a>.
+                </figcaption>
+            </figure>
+
+            <!-- ── SECCIÓN 3 ── -->
+
+            <h4>¿Más años de acreditación implica mayor costo? Una correlación débil</h4>
+
+            <p>El <a href="https://datavizcatalogue.com/ES/metodos/diagrama_de_dispersion.html" target="_blank">diagrama de dispersión</a> es la herramienta idónea para visualizar patrones entre dos variables cuantitativas: cada punto representa un programa, y su posición en los ejes X e Y refleja simultáneamente cuántos años tiene de acreditación y cuánto cuesta. El color codifica el tipo de institución, lo que permite identificar grupos y tendencias sin sacrificar la información individual de cada programa.</p>
+
+            <p>Al observar el conjunto, se percibe una leve tendencia ascendente —programas con más años de acreditación tienden a ser más caros— pero la dispersión es amplia y los valores atípicos son varios. Las universidades privadas concentran los aranceles más altos, pero también algunos de los más bajos del sistema. Una estatal como la <small>U. de Chile</small>, con 7 años de acreditación, cobra $6,5 millones, mientras que la privada <small>U. del Desarrollo</small>, con 6 años, supera los $10 millones. Esto sugiere que la heterogeneidad interna de cada sector es tan relevante como la diferencia entre sectores.</p>
+
+            <figure>
+                <canvas id="dispersion"></canvas>
+                <figcaption>
+                    Años de acreditación institucional vs. arancel anual del programa, codificado por color según tipo de institución (azul: estatal, naranja: privada). La línea de referencia traza la tendencia general. Datos 2026 del <a href="https://www.mifuturo.cl/bases-de-datos-de-oferta-academica/" target="_blank">SIES</a> y la <a href="https://www.cnachile.cl/Paginas/Inicio.aspx" target="_blank">CNA</a>.
+                </figcaption>
+            </figure>
+
+            <p>Complementando la lectura anterior, el siguiente gráfico ordena las regiones según el total de vacantes disponibles. La brecha es contundente: la Región Metropolitana no solo lidera —es una categoría aparte. Valparaíso y Biobío son los únicos focos secundarios con presencia relevante; el resto del país compite por una porción marginal de la oferta total.</p>
+
+            <figure>
+                <canvas id="barras-vacantes"></canvas>
+                <figcaption>
+                    Total de vacantes en programas universitarios de Diseño por región, ordenadas de mayor a menor. La Región Metropolitana, destacada en naranja intenso, concentra 1.939 de las 2.717 vacantes del sistema. Datos 2026 del <a href="https://www.mifuturo.cl/bases-de-datos-de-oferta-academica/" target="_blank">SIES</a>.
+                </figcaption>
+            </figure>
+
+            <!-- ── SECCIÓN 4 ── -->
+
+            <h4>El mapa completo: busca tu carrera</h4>
+
+            <p>El mapa de la desigualdad en el acceso al Diseño no se agota en los promedios. Detrás de cada cifra hay programas concretos, universidades específicas y regiones con nombres. Si el problema es estructural, la evidencia también lo es: está distribuida en cada una de las 46 filas que siguen.</p>
+
+            <p>Usa el buscador para filtrar por nombre de programa, universidad o región. La tabla reacciona en tiempo real.</p>
+
+            <div class="buscador-wrap">
+                <label for="buscador" class="buscador-label">Buscar programa, universidad o región</label>
+                <input type="text" id="buscador" placeholder="Ej: Gráfico, Santiago, Privada…" autocomplete="off" />
+                <span id="contador-resultados"></span>
+            </div>
+
+            <div class="tabla-wrap">
+                <table id="tabla-programas">
+                    <thead>
+                        <tr>
+                            <th>Programa</th>
+                            <th>Universidad</th>
+                            <th>Región</th>
+                            <th>Tipo</th>
+                            <th>Arancel anual</th>
+                            <th>Acreditación</th>
+                            <th>Vacantes</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabla-body">
+                        <!-- Generado por script.js -->
+                    </tbody>
+                </table>
+            </div>
+
+            <h5>Fuentes</h5>
+            <p>Servicio de Información de Educación Superior (<small>SIES</small>), Subsecretaría de Educación Superior, Ministerio de Educación de Chile (2026); Comisión Nacional de Acreditación (<small>CNA</small>), <a href="https://www.cnachile.cl/Paginas/Inicio.aspx" target="_blank">cnachile.cl</a>; Catálogo de Visualización de Datos, <a href="https://datavizcatalogue.com/ES/index.html" target="_blank">datavizcatalogue.com</a>.</p>
+
+        </main>
+
+        <footer>
+            <div>
+                <a href="https://www.reuters.com/graphics/IRAN-CRISIS/OIL-CONSUMERS/akpeyynmypr/" target="_blank">Inspirado en Reuters Graphics</a>
+                <a href="https://github.com/profesorfaco/troncal" target="_blank">Diseño y visualización de información</a>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
