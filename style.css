@@ -102,6 +102,15 @@ header {
     font-family: var(--sans);
 }
 
+header img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 1.5rem;
+    border-radius: 4px;
+}
+
 header a {
     text-decoration: none;
 }
