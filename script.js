@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     label: "Estatal",
                     data: datosEstatal,
-                    backgroundColor: "rgba(26, 108, 168, 0.75)",
+                    backgroundColor: "rgba(92, 110, 60, 0.75)",
                     pointRadius: 6,
                     pointHoverRadius: 8,
                 },
