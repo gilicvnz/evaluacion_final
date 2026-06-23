@@ -387,7 +387,7 @@ figure figcaption {
     text-transform: uppercase;
     letter-spacing: 0.07rem;
     font-size: 0.7rem;
-    white-space: nowrap;
+    white-space: normal;
 }
 
 #tabla-programas td {
