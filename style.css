@@ -206,6 +206,7 @@ h5 {
 p {
     font-family: var(--serif);
     color: var(--color-text);
+    text-align: justify;
     margin: 1.2rem 0;
 }
 
@@ -361,14 +362,16 @@ figure figcaption {
 /* ── Tabla de datos ── */
 
 .tabla-wrap {
-    margin: 0.5rem -1.5rem 2rem;
-    overflow-x: auto;
+    margin: 0.5rem 0 2rem; /* Eliminados los márgenes negativos que cortaban la pantalla */
+    overflow-x: auto !important; /* Forzamos al contenedor a crear la barra de scroll */
     border: 1px solid #eee;
     border-radius: 4px;
+    width: 100%;
 }
 
 #tabla-programas {
     width: 100%;
+    min-width: 800px; /* Forzamos a la tabla a medir 800px para que SÍ O SÍ tenga que scrollear */
     border-collapse: collapse;
     font-family: var(--sans);
     font-size: 0.78rem;
@@ -387,15 +390,22 @@ figure figcaption {
     text-transform: uppercase;
     letter-spacing: 0.07rem;
     font-size: 0.7rem;
-    white-space: normal;
+    white-space: nowrap !important; /* Evita que "Acreditación" o cualquier título se rompa */
 }
 
 #tabla-programas td {
     padding: 0.6rem 0.75rem;
     border-bottom: 1px solid #f0f0f0;
     color: var(--color-text);
-    vertical-align: top;
+    vertical-align: middle;
     line-height: 1.35;
+    white-space: nowrap; /* Evita que los precios y datos se vayan para abajo */
+}
+
+/* Permitimos que solo la primera columna (Programa) pueda tener varias líneas si el nombre es largo */
+#tabla-programas td:first-child {
+    white-space: normal;
+    min-width: 180px;
 }
 
 #tabla-programas tbody tr:last-child td {
@@ -423,6 +433,19 @@ figure figcaption {
 
 .fila-oculta {
     display: none;
+}
+
+/* MODIFICADO: Ajuste preciso para las columnas críticas */
+#tabla-programas th:nth-child(5),
+#tabla-programas td:nth-child(5) {
+    white-space: nowrap;
+    width: 130px;
+}
+
+#tabla-programas th:nth-child(6),
+#tabla-programas td:nth-child(6) {
+    white-space: nowrap;
+    width: 110px;
 }
 
 /* ── Responsive ── */
